@@ -30,6 +30,7 @@ You will not find the books BookStore database as it gets created when applicati
 ### POST
 
 Open a REST client, type in address <vm ip>:8081/api/Library, method as POST, add below json to body and change the type to application/json
+```json
 {
 	"Id":1, //integer
 	"ISBN":1, //integer
@@ -37,25 +38,32 @@ Open a REST client, type in address <vm ip>:8081/api/Library, method as POST, ad
 	"Publisher":"ABC", //string
 	"Price":500 //integer
 }
-
+```
 Send request to receive 200 OK in response and the book with Id 1 has been added to the store.
 
 ### GET
 
 Open a REST client, type in address <vm ip>:8081/api/Library, method as GET
 Send request to get below response
+	
+```
 [{"id":1,"isbn":1,"name":"XYZ","publisher":"ABC","price":500}]
+```
   
 ### GET with ID
 
 Open a REST client, type in address <vm ip>:8081/api/Library/1, method as GET
 Send request to get below response
+	
+```
 [{"id":1,"isbn":1,"name":"XYZ","publisher":"ABC","price":500}]
-
+```
 ### PUT
 
 Open a REST client, type in address <vm ip>:8081/api/Library, method as PUT, add below json to body and change the type to application/json
-  (updating price frm 500 to 1500)
+(updating price from 500 to 1500)
+
+```json
 {
 	"Id":1, //integer
 	"ISBN":1, //integer
@@ -63,7 +71,9 @@ Open a REST client, type in address <vm ip>:8081/api/Library, method as PUT, add
 	"Publisher":"ABC", //string
 	"Price":1500 //integer
 }
-  Send request to receive 200 OK in response and the book with Id 1 has been updated to the store.
+```
+
+Send request to receive 200 OK in response and the book with Id 1 has been updated to the store.
 
 ### DELETE
 
