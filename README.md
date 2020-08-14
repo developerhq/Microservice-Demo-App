@@ -1,8 +1,8 @@
-# LibraryAPI
+# C# Microservice Demo App
 
-LibraryAPI demostrates an example of creating microservice(s) in .net core and interacting with external database (MongoDB in this case) hosted in a separate container.
+This example will guide you through the code to build a C# App that works with a MongoDB Server. It demostrates an example of creating microservice(s) in .net core and interacting with external database hosted in a separate container.
 
-LibraryAPI is a ASP.Net Core Web Application. It demonstrates below features - 
+This is a ASP.Net Core Web Application. It demonstrates below features - 
 
 1. Add a book
 2. Get all books
