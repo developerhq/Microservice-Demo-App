@@ -22,9 +22,9 @@ You can use a API tool like [Postman](https://www.postman.com) to consume the AP
 
 ### POST
 
-Address: <vm ip>:8081/api/Library
-Method: POST
-Body:
+- Address: [app_ip]:8081/api/Library
+- Method: POST
+- Body:
 ```json
 {
 	"Id":1,
@@ -38,8 +38,8 @@ This creates a new book entry in MongoDB, with ID `1`.
 
 ### GET
 
-Address: <vm ip>:8081/api/Library
-Method: GET
+- Address: [app_ip]:8081/api/Library
+- Method: GET
 	
 ```json
 [{"id":1,"isbn":1,"name":"XYZ","publisher":"ABC","price":500}]
@@ -48,8 +48,8 @@ This returns all the current book entries.
 
 ### GET with ID
 
-Address: <vm ip>:8081/api/Library/1
-Method: GET
+- Address: [app_ip]:8081/api/Library/1
+- Method: GET
 	
 ```
 [{"id":1,"isbn":1,"name":"XYZ","publisher":"ABC","price":500}]
@@ -58,9 +58,9 @@ This returns all the book with id = 1.
 
 ### PUT
 
-Address: <vm ip>:8081/api/Library
-Method: PUT
-Body:
+- Address: [app_ip]:8081/api/Library
+- Method: PUT
+- Body:
 ```json
 {
 	"Id":1, 
@@ -74,8 +74,8 @@ This updates the price from 500 to 1500.
 
 ### DELETE
 
-Address: <vm ip>:8081/api/Library/1
-Method: DELETE
+- Address: [app_ip]:8081/api/Library/1
+- Method: DELETE
 
 This deletes the book with id = 1
 
